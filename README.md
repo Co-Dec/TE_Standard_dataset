@@ -29,7 +29,7 @@ First clone this repository on your computer.
 ```
 mkdir /my/path/to/repository
 cd /my/path/to/repository
-git clone https://github.com/TE_Standart_dataset
+git clone https://github.com/Co-Dec/TE_Standart_dataset
 cd
 ```
 cd in the directory where you want to create the dataset.
