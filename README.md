@@ -1,10 +1,10 @@
 # TE_Standart_dataset
 A code to create standart dataset to assess TE detection performances.
-Version 1.0
+Version 1.0-2017-04
 
 -----------------
 ## Author : 
-DECHAUD Corentin Feb-April 2017.
+DECHAUD Corentin
 
 @E-mail : corentin.dechaud@gmail.com
 
@@ -78,7 +78,9 @@ Script : `Rand_vargen.py`
     * Genome with 1 out of 2 TE insertions created masked. (Fasta file, masked with "N").
     * Genome annotation with 1 out of 2 TE insertion created. (Bed file).
     * Genome description with 1 out of 2 TE insertion created. (CSV file). 
-
+  * Special files :
+    * Genome annotation with 1 out of 2 TE, showing TE present in it, and where TEs deleted are supposed to be. Expected deleted TE are in 200bp intervals present in 1 out of 2 lines.
+    * 2 specbed files, that can be needed to assess TIDAL software.
 **Genome description (CSV) :**
 
 TE Name / Start / End / Divergence / Size / Distance Before / Distance After / GC Before / GC After / CopyNumber / Family
