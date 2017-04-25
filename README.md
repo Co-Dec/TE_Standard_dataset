@@ -44,7 +44,9 @@ Assessing performances of different tools requires to compare them on the same d
 Script : `JDD.R`
 
 Randomly picks 50 TE number per family between 1 and 100 without replacement.
+
 Randomly picks the same number of TE sizes, TE diversity, Distances between TEs, and GC counts in biological distributions.
+
 Writes those descriptions in `inter.csv` , `TEs.csv` , and `Assoc.csv`.
 
 ### Second Step : Generating TE dataset
@@ -83,4 +85,5 @@ TE Name / Start / End / Divergence / Size / Distance Before / Distance After / G
 
 ## Contacts :
 DECHAUD Corentin
+
 E-mail : corentin.dechaud@gmail.com
