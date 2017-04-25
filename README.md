@@ -111,7 +111,7 @@ See *Use.png*
 
 -----------------
 ## Known issues :
-  - When running this program, due to random sampling of lengths, sometimes, TEs with negative lengths are created. It doesn't matter because they are deleted, but is too many of them are, the program can stop. It is very rare and you just have to run it again. It still can be a problem if you run it in a pipeline thousand times.
+  - When running this program, due to random sampling of lengths, sometimes, TEs with negative lengths are created. It doesn't matter because they are deleted, but if too many of them are, the program can stop. It is very rare and you just have to run it again. It still can be a problem if you run it in a pipeline thousand times. Will be fixed soon.
 
 -----------------
 ## Contacts :
