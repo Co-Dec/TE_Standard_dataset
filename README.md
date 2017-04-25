@@ -67,7 +67,7 @@ See file : *Shemas_variations_eng.png*
 ### Third step : Create the genomes
 Script : `Rand_vargen.py`
 
-See *Rang_vargen.png*
+See *Rand_vargen.png*
 
 **Creates the genome data files :**
   * Total genome files :
