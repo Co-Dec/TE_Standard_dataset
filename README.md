@@ -32,6 +32,9 @@ cd /my/path/to/repository
 git clone https://github.com/Co-Dec/TE_Standart_dataset
 cd
 ```
+
+-----------------
+## Create your dataset :
 cd in the directory where you want to create the dataset.
 ```
 /my/path/to/repository/TE_standart_dataset.sh
