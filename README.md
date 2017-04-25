@@ -67,6 +67,8 @@ See file : *Shemas_variations_eng.png*
 ### Third step : Create the genomes
 Script : `Rand_vargen.py`
 
+See *Rang_vargen.png*
+
 **Creates the genome data files :**
   * Total genome files :
     * Genome with all TE insertions created. (Fasta file).
@@ -81,6 +83,7 @@ Script : `Rand_vargen.py`
   * Special files :
     * Genome annotation with 1 out of 2 TE, showing TE present in it, and where TEs deleted are supposed to be. Expected deleted TE are in 200bp intervals present in 1 out of 2 lines.
     * 2 specbed files, that can be needed to assess TIDAL software.
+  
 **Genome description (CSV) :**
 
 TE Name / Start / End / Divergence / Size / Distance Before / Distance After / GC Before / GC After / CopyNumber / Family
