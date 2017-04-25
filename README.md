@@ -80,9 +80,11 @@ Genome description (CSV) :
 
 TE Name / Start / End / Divergence / Size / Distance Before / Distance After / GC Before / GC After / CopyNumber / Family
 
+-----------------
 ## Known issues :
   - When running this program, due to random sampling of lengths, sometimes, TEs with negative lengths are created. It doesn't matter because they are deleted, but is too many of them are, the program can stop. It is very rare and you just have to run it again. It still can be a problem if you run it in a pipeline thousand times.
 
+-----------------
 ## Contacts :
 DECHAUD Corentin
 
