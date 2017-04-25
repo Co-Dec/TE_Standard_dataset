@@ -88,6 +88,27 @@ See *Rand_vargen.png*
 
 TE Name / Start / End / Divergence / Size / Distance Before / Distance After / GC Before / GC After / CopyNumber / Family
 
+### Fourth step : Using the dataset
+See *Use.png*
+
+* Assess *reference* insertion detection (Shared between reference and unknown genome, or deleted ones, present in the reference and absent in the unknown genome) :
+  * Use the `GenTot.fasta` as a reference genome. If the software you are using needs a masked one, you can use `GenMask.fasta`.
+  * Generate your reads on `GenDel.fasta`.
+  * Start your program.
+  * Evaluate the quality of the results using the bed files corresponding to what is expected.
+  * You can check if there is a bias in the TE found or missed by the software using the description files `Anot.csv` and `AnotDel.csv`.
+  
+* Asses *new* insertion detection (Absent from reference, but present in the unknown genome) :
+  * Use `GenDel.fasta` as a reference genome. If the software you are using needs a masked one, you can use `DelMask.fasta`.
+  * Generate your reads on `GenTot.fasta`.
+  * Start your program.
+  * Evaluate the quality of the results using the bed files corresponding to what is expected. I recommend the use of `refdel.new.bed`. It describes the *reference* genome with half of the TE, and showing where new TE are expected.
+  * You can check if there is a bias in the TE found or missed by the software using the description files `Anot.csv` and `AnotDel.csv`.
+ 
+ **Note** :
+ 
+ I recommend to use [art_illumina](https://www.niehs.nih.gov/research/resources/software/biostatistics/art/) to generate your reads on the artificial genomes.
+
 -----------------
 ## Known issues :
   - When running this program, due to random sampling of lengths, sometimes, TEs with negative lengths are created. It doesn't matter because they are deleted, but is too many of them are, the program can stop. It is very rare and you just have to run it again. It still can be a problem if you run it in a pipeline thousand times.
