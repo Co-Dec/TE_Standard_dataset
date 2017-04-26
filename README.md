@@ -37,12 +37,15 @@ cd
 ## Create your dataset :
 cd in the directory where you want to create the dataset.
 ```
-/my/path/to/repository/TE_standart_dataset.sh
+/my/path/to/repository/TE_Standart_dataset.sh
 ```
 
 -----------------
 ## General description :
 Assessing performances of different tools requires to compare them on the same data. Here I developped a program to create this kind of dataset allowing performances comparison.
+
+**The whole pipeline is run lauched just by running `TE_Standart_dataset.sh`**
+
 ### First step : Generating parameters
 Script : `JDD.R`
 
