@@ -46,22 +46,34 @@ Assessing performances of different tools requires to compare them on the same d
 ### First step : Generating parameters
 Script : `JDD.R`
 
-Randomly picks 50 TE number per family between 1 and 100 without replacement.
+Randomly picks 50 TE number per family between 1 and 100 without replacement. Everytime you run the program you will get 50 different TE families, but without the same copy number per family everytime. For example : 
 
-Randomly picks the same number of TE sizes, TE diversity, Distances between TEs, and GC counts in biological distributions.
+|       | Run1 | Run2 | Run3 | Run4 |
+|:-----:|:----:|:----:|:----:|:----:|
+|  Fam1 |  21  |  52  |  75  |   3  |
+|  Fam2 |   6  |  29  |  33  |  47  |
+|  ...  |  ... |  ... |  ... |  ... |
+| Fam50 |  41  |  19  |   8  |   2  |
+| **Total** | **2565** | **2956** | **2352** | **2413** |
+
+Retrieves the total number of TE doing the sum for the entire family.
+
+Randomly picks the same number of TE sizes, TE divergence, Distances between TEs, and GC counts of sequences between TEs in biological distributions.
+
+We now have a number of TE (+/- 2500) divided in 50 TE families, for each we have a **size**, a **divergence**, a **GC count**, and a **distance**. In fact we pick N+1 distance and GC because there are N TEs and N+1 genomic regions.
 
 Writes those descriptions in `inter.csv` , `TEs.csv` , and `Assoc.csv`.
 
 ### Second Step : Generating TE dataset
 Script : `TE_dataset.py`
 
-
 See file : *Shemas_variations_eng.png*
-  - Each length picked is associated to a TE family respecting copy number per family.
+  - Each TE length picked is associated to a TE family respecting copy number per family.
  (Ex : If family 1 has 21 copies, then the 21 first lengths would be associated to family 1.)
-  - Retrieve the longest length of each family and create a random sequence. (We suppose that this is the ancestral copy)
+  - Retrieve the longest length of each family and create a random sequence. (We suppose that this is the ancestral copy of the family)
   - Pick a random position in this length for each TE of the family.
-  - Apply the divergence to the ancentral TE to create the new TE, starting at the position picked with his length.
+  - Copy the ancestral sequence in the TE we are creating from the position choosen randomly with a length equal to the size picked.
+  - Apply the divergence to the sequence to create the new TE.
   - Do this again for each family.
 
 ### Third step : Create the genomes
