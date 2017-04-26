@@ -67,7 +67,7 @@ Writes those descriptions in `inter.csv` , `TEs.csv` , and `Assoc.csv`.
 ### Second Step : Generating TE dataset
 Script : `TE_dataset.py`
 
-See file : *Shemas_variations_eng.png*
+See file : *Shemas_variations_e.png*
   - Each TE length picked is associated to a TE family respecting copy number per family.
  (Ex : If family 1 has 21 copies, then the 21 first lengths would be associated to family 1.)
   - Retrieve the longest length of each family and create a random sequence. (We suppose that this is the ancestral copy of the family)
