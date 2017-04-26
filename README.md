@@ -121,6 +121,8 @@ See *Use.png*
  
  I recommend to use [art_illumina](https://www.niehs.nih.gov/research/resources/software/biostatistics/art/) to generate your reads on the artificial genomes.
 
+Using only one genome permits to assess TE presence / absence detection or the precision of the position where the TE is found, but not TE frequence estimations. You can generate your reads on 4 `GenTot.fasta` and 1 `GenDel.fasta` to see if the frequency found is 80% for example.
+
 -----------------
 ## Known issues :
   - When running this program, due to random sampling of lengths, sometimes, TEs with negative lengths are created. It doesn't matter because they are deleted, but if too many of them are, the program can stop. It is very rare and you just have to run it again. It still can be a problem if you run it in a pipeline thousand times. Will be fixed soon.
