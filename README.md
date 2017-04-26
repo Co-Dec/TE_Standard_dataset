@@ -49,7 +49,7 @@ Assessing performances of different tools requires to compare them on the same d
 ### First step : Generating parameters
 Script : `JDD.R`
 
-Randomly picks 50 TE number per family between 1 and 100 without replacement. Everytime you run the program you will get 50 different TE families, but without the same copy number per family everytime. For example : 
+Randomly picks 50 TE copy per family between 1 and 100 without replacement. Everytime you run the program you will get 50 different TE families, but without the same copy number per family everytime. For example : 
 
 |       | Run1 | Run2 | Run3 | Run4 |
 |:-----:|:----:|:----:|:----:|:----:|
