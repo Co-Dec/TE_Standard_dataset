@@ -30,6 +30,7 @@ First clone this repository on your computer.
 mkdir /my/path/to/repository
 cd /my/path/to/repository
 git clone https://github.com/Co-Dec/TE_Standart_dataset
+cd TE_Standart_dataset
 chmod +x *
 cd
 ```
