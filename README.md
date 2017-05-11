@@ -30,13 +30,15 @@ First clone this repository on your computer.
 mkdir /my/path/to/repository
 cd /my/path/to/repository
 git clone https://github.com/Co-Dec/TE_Standart_dataset
+chmod +x *
 cd
 ```
 
 -----------------
 ## Create your dataset :
-cd in the directory where you want to create the dataset.
+cd to the directory where you want to create the dataset and run.
 ```
+cd my/dir/where/I/want/the/files
 /my/path/to/repository/TE_Standart_dataset.sh
 ```
 
@@ -65,7 +67,7 @@ Randomly picks the same number of TE sizes, TE divergence, Distances between TEs
 
 We now have a number of TE (+/- 2500) divided in 50 TE families, for each we have a **size**, a **divergence**, a **GC count**, and a **distance**. In fact we pick N+1 distance and GC because there are N TEs and N+1 genomic regions.
 
-Writes those descriptions in `inter.csv` , `TEs.csv` , and `Assoc.csv`.
+Writes those descriptions in `Inter.csv` , `TEs.csv` , and `Assoc.csv`.
 
 ### Second Step : Generating TE dataset
 Script : `TE_dataset.py`
@@ -104,7 +106,7 @@ See *Rand_vargen.png*
 TE Name / Start / End / Divergence / Size / Distance Before / Distance After / GC Before / GC After / CopyNumber / Family
 
 ### Fourth step : Using the dataset
-See *Use.png*
+See *aim.png*
 
 * Assess *reference* insertion detection (Shared between reference and unknown genome, or deleted ones, present in the reference and absent in the unknown genome) :
   * Use the `GenTot.fasta` as a reference genome. If the software you are using needs a masked one, you can use `GenMask.fasta`.
