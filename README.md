@@ -1,5 +1,5 @@
-# TE_Standart_dataset
-A code to create standart dataset to assess TE detection performances.
+# TE_Standard_dataset
+A code to create standard dataset to assess TE detection performances.
 Version 1.0-2017-04
 
 -----------------
@@ -29,8 +29,8 @@ First clone this repository on your computer.
 ```
 mkdir /my/path/to/repository
 cd /my/path/to/repository
-git clone https://github.com/Co-Dec/TE_Standart_dataset
-cd TE_Standart_dataset
+git clone https://github.com/Co-Dec/TE_Standard_dataset
+cd TE_Standard_dataset
 chmod +x *
 cd
 ```
@@ -40,14 +40,14 @@ cd
 cd to the directory where you want to create the dataset and run.
 ```
 cd my/dir/where/I/want/the/files
-/my/path/to/repository/TE_Standart_dataset.sh
+/my/path/to/repository/TE_Standard_dataset.sh
 ```
 
 -----------------
 ## General description :
 Assessing performances of different tools requires to compare them on the same data. Here I developped a program to create this kind of dataset allowing performances comparison.
 
-**The whole pipeline is run lauched just by running `TE_Standart_dataset.sh`**
+**The whole pipeline is run lauched just by running `TE_Standard_dataset.sh`**
 
 ### First step : Generating parameters
 Script : `JDD.R`
